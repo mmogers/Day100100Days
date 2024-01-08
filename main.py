@@ -51,7 +51,7 @@ def printMe():
       print("⏰ Sending a reminder")
       sendEmail(price_str, link)
 
-schedule.every(2).hours.do(printMe)
+schedule.every(15).seconds.do(printMe)
 
 while True:
     schedule.run_pending()
